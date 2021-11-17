@@ -11,22 +11,22 @@ const personalMovieDB = {
     privat: false
 };
 
-// for (let i = 1; i <= numberOfFilms; i++) {
-//     const a = prompt("Один из последних просмотренных фильмов?"),
-//     b = prompt("Его оценка?");
+for (let i = 1; i <= numberOfFilms; i++) {
+    const a = prompt("Один из последних просмотренных фильмов?"),
+    b = prompt("Его оценка?");
 
-//     if (a != null && b != null && a != '' && b != '' && a.length < 50) {
-//         personalMovieDB.movies[a] = b;
-//         console.log("Done");
-//     } else {
-//         console.log("Error");
-//         i--;
-//     }
+    if (a != null && b != null && a != '' && b != '' && a.length < 50) {
+        personalMovieDB.movies[a] = b;
+        console.log("Done");
+    } else {
+        console.log("Error");
+        i--;
+    }
 
     
 
-// }
-// console.log(personalMovieDB);
+}
+console.log(personalMovieDB);
 
 if (personalMovieDB.count < 10) {
     alert("Просмотренно довольно мало фильмов :)");
